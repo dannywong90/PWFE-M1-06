@@ -26,8 +26,8 @@ body{
 			background-image: url("../img/logo.png");
 			background-repeat: no-repeat; 
 			background-size: contain;
-			background-position: left center;
-			padding-left: 60px;
+			background-position: 8px center;
+			padding-left: 70px;
 			margin-top: 5px;
 		}
 		nav {
