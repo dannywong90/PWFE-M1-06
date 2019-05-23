@@ -86,7 +86,7 @@ body{
 	-Version simplificada (top/right/bottom/left)
 	margin:0 20px 0 20px; */
 
-	margin:0 20px; /* version reducida (y/x) */
+	margin: 20px; /* version reducida (y/x) */
 }
 .noticia:last-child {  /*no pone borde en la ultima caja */
 	border: none; 
@@ -133,6 +133,56 @@ width: 30%
 		font-size: 12px;
 		margin-top: 10px;
 	}
+/*
+#tabla-posiciones table,
+#tabla-posiciones tr,
+#tabla-posiciones th,
+#tabla-posiciones td{
+	border:solid 1px #000;
+}
+*/
+#tabla-posiciones table {/*selector que solo afecte a table*/
+	margin:auto; /*lo centra, distribuye proporcionalmente*/
+	width: 80%; 
 
+}
 
-	
+#tabla-posiciones td,
+#tabla-posiciones th {
+	padding: 15px; 
+}
+
+#tabla-posiciones th {
+	background-color: #990000;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 24PX;
+}
+
+#tabla-posiciones td {
+	background-color: #d9d9d9;
+	vertical-align: middle; /*alinear*/
+
+}
+
+#tabla-posiciones tr {
+	border-bottom: solid 1px #a1a1a1;
+}
+
+#tabla-posiciones tr:last-child {
+	border: none;
+}
+
+#tabla-posiciones td:nth-of-type(odd){
+	font-weight: 700;
+	text-align:center;
+	font-size:24px;
+
+}
+
+#tabla-posiciones td:nth-of-type(even) span {
+
+	font-weight: 700;
+	color: blue;
+
+}
