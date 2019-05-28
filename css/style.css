@@ -186,3 +186,56 @@ width: 30%
 	color: blue;
 
 }
+
+button {
+	display: none;
+}
+@media screen and (max-width: 767px){ /*condicion de la pantalla stilos, etiquetas () */ /*hasta una tablet de 7´ */
+
+	nav {
+		display: none; /*menu no se ve*/
+		float: none;
+		clear: both;
+
+	}
+	nav li {
+		display: block;
+		text-align: center;
+	}
+	.noticia {
+
+		flex-direction: column; /*para dejar la imagen y debajo el texto*/
+	}
+
+	.noticia-img,
+	.noticia-txt {
+		width: 100%;
+	}
+
+	button {
+		display: block;   /* se ve el boton hamberguesa cuando esta debajo del rango que le puse en medida*/
+		padding: 5px;
+		border: none;
+		background-color: transparent;
+		color: #fff;
+		font-weight: 700px;
+		font-size: 20px;
+		line-height: 1;
+		float: right; /*para elegir que este en la derecha*/
+
+	}
+
+	button:focus + nav {
+		display: block; /*para clikear y se despliegue*/
+	}
+}
+
+@media screen and (max-width: 575px) { /* <-- hasta un smarphone de 6' */
+
+	
+
+	
+	
+/* cominza la media */
+
+}
