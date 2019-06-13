@@ -3,17 +3,21 @@
 	/* */
 
 
+	//1) Introduccion
 	let nombre = prompt("Ingrese nombre:") /* una variable es un espacio reservado en memoria para el almacenamiento de un valor */
 	let stock = prompt("Ingrese stock:")
 	let precio = prompt("Ingrese precio:")
 	let disponible = confirm("Esta disponible?")
 
+	//2) Nudo
 	let precioFinal = precio * 1.21
+
 	//alert(nombre)
 	//console.log(precio) /* se lee en la consola   */
 
 	//document.write("Hay " + stock + " unidades de " + nombre + " de valen $ " + precio + " c/u") /*directamente lo escribe en el documento-comandos*/
 	
+	//3) Desenlace
 	document.write(`<p>Hay ${stock} unidades de <strong>${nombre}</strong> que valen ARS ${precioFinal} c/u</p>`)
 
 </script>
