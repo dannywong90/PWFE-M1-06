@@ -108,7 +108,14 @@
 
 		let ajax = new XMLHttpRequest() /*si o si toca escribir el XMLHttpRequest*/
 		ajax.open("GET","noticias.json") /*(COMO -GET=devolver un archivo-POST=que salgan datos del navegador) (	QUE ''recurso)*/
-		ajax.onload = ?????
+		ajax.onload = function(){ //<--Funciones anonima
+			//Aca hay que hacer algo con JSON....
+			if( ajax.status == 200 ){ //<--Respuesta Exitosa!
+			  console.log( ajax.response)
+
+			}
+
+		}
 		ajax.send() /* sin el send el ajax no se ejecuta*/
 
 
@@ -133,7 +140,7 @@
 			
 		}
 
-		function validarLink(){
+		function validarLink(){ //<--Funcion Nominada
 			confirm("Esta seguro que desea irse?")
 		}
 
@@ -165,6 +172,8 @@
 
 			document.querySelector("#ultimas-noticias .row").appendChild( noticia )
 		}
+
+		
     </script>
 
 
