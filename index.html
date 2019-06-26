@@ -111,7 +111,12 @@
 		ajax.onload = function(){ //<--Funciones anonima
 			//Aca hay que hacer algo con JSON....
 			if( ajax.status == 200 ){ //<--Respuesta Exitosa!
-			  console.log( ajax.response)
+			   console.log( "Antes del parseo:")
+			   console.log( ajax.response)
+
+			    console.log( "Despues del parseo:") //capacidad de un formato a otro formato 
+			    console.log( JSON.parse(ajax.response) ) //string en objetos
+
 
 			}
 
