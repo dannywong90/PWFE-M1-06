@@ -2,8 +2,9 @@
   "name": "simplenodejs",
   "version": "1.0.0",
   "description": "Servidor de archivos estáticos simple en Node.js (sin frameworks)",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
